@@ -1,0 +1,84 @@
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace["Prisoners to Criminals"].CFrame
+wait(3)
+
+local Partt = Instance.new("Part")
+Partt.Parent = game:GetService("Workspace")
+Partt.Anchored = true
+Partt.Name = "JewelryEnd"
+Partt.Position = Vector3.new(444, 290, 1585)
+
+local Partt11 = Instance.new("Part")
+Partt11.Parent = game:GetService("Workspace")
+Partt11.Anchored = true
+Partt11.Name = "JewelryStart"
+Partt11.Position = Vector3.new(421, 281, 1640)
+
+local Partt2 = Instance.new("Part")
+Partt2.Parent = game:GetService("Workspace")
+Partt2.Anchored = true
+Partt2.CanCollide = false
+Partt2.Name = "BankEnd"
+Partt2.Position = Vector3.new(30, 292, 1720)
+
+local Partt22 = Instance.new("Part")
+Partt22.Parent = game:GetService("Workspace")
+Partt22.Anchored = true
+Partt22.CanCollide = false
+Partt22.Name = "BankStart"
+Partt22.Position = Vector3.new(43, 281, 1686)
+
+local Partt3 = Instance.new("Part")
+Partt3.Parent = game:GetService("Workspace")
+Partt3.Anchored = true
+Partt3.Name = "PostalEnd"
+Partt3.Position = Vector3.new(-233, 303, 192)
+
+local Partt3 = Instance.new("Part")
+Partt3.Parent = game:GetService("Workspace")
+Partt3.Anchored = true
+Partt3.Name = "PostalEnd"
+Partt3.Position = Vector3.new(-235, 303, 192)
+
+local Partt33 = Instance.new("Part")
+Partt33.Parent = game:GetService("Workspace")
+Partt33.Anchored = true
+Partt33.Name = "PostalStart"
+Partt33.Position = Vector3.new(-202, 281, 175)
+
+local Partt4 = Instance.new("Part")
+Partt4.Parent = game:GetService("Workspace")
+Partt4.Anchored = true
+Partt4.Name = "GasRob"
+Partt4.Position = Vector3.new(960, 281, 54)
+
+while wait(2) do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace["Prisoners to Criminals"].CFrame
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace["JewelryStart"].CFrame
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace["JewelryEnd"].CFrame
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace["BankStart"].CFrame
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace["BankEnd"].CFrame
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace["PostalStart"].CFrame
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace["PostalEnd"].CFrame
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace["GasRob"].CFrame
+wait(2)
+for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do
+                   if v:FindFirstChild("ProximityPrompt") then
+                       fireproximityprompt(v.ProximityPrompt)
+           end
+       end
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.workspace["Chest"].CFrame
+wait(2)
+for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do
+                   if v:FindFirstChild("ProximityPrompt") then
+                       fireproximityprompt(v.ProximityPrompt)
+           end
+       end
+end
